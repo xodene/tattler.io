@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+       <meta charset="utf-8" content="width=device-width, initial-scale=1">
+       <title>Tattler</title> 
+       <style>
+           * {
+               box-sizing: border-box;
+           }
+    
+           .column {
+               float: left;
+               width: 33.33%;
+               padding: 10px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /*responsive columns, stack if screen width < 600px*/
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+            }
+       </style>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="column" style="background-color: bisque;">
+                <p id="followers">0 followers</p>
+                <p id="retattles">0 retattles</p>
+                <p id="hearts">0 hearts</p>
+                <p id="dollars">$0 Promo Dollars</p>
+            </div>
+            <div class="column" style="background-color: cornflowerblue;">
+                <button onClick="tattle()">Tattle!</button>
+                <button onClick="buyOneFollower()" id="buyOneFollowerButton">Buy 1 Follower</button>
+                <button onClick="buyTenFollowers()" id="buyTenFollowersButton">Buy 10 Followers</button>
+
+            </div>
+        </div>
+        
+
+        <script src="main.js" charset="utf-8" type="text/javascript"></script>
+    </body>
+</html>
