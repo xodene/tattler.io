@@ -66,3 +66,15 @@ function buyTenFollowers() {
     }
     updateLabels()
 }
+
+function getBuyMaxFollowers() {
+
+}
+
+function buyMaxFollowers() {
+
+}
+
+function generatePosts() {
+    /* TO DO */
+}
