@@ -25,15 +25,21 @@ function tattle() {
 }
 
 function updateLabels() {
-    document.getElementById("followers").innerHTML =
-        gameData.followers + " followers"
-    document.getElementById("retattles").innerHTML =
-        gameData.retattles + " retattles"
-    document.getElementById("hearts").innerHTML = gameData.hearts + " hearts"
+    const followers = document.querySelector("#followers span")
+    view.animate.countUp(followers, gameData.followers, 1000)
+
+    const retattles = document.querySelector("#retattles span")
+    view.animate.countUp(retattles, gameData.retattles, 1000)
+
+    const hearts = document.querySelector("#hearts span")
+    view.anim.countUp(hearts, gameData.hearts, 1000)
+
+    const dollars = document.querySelector("#dollars span")
+    view.animate.countUp(dollars, gameData.promoDollars, 1000)
+
     document.getElementById("managers").innerHTML =
         gameData.managers + " managers"
-    document.getElementById("dollars").innerHTML =
-        "$" + gameData.promoDollars + " Promo Dollars"
+
     document.getElementById("news").innerHTML = "News: " + gameData.newsScore
     document.getElementById("sports").innerHTML =
         "Sports: " + gameData.sportsScore
