@@ -3,6 +3,7 @@ const view = {
         countUp: (element, endValue, dur) => {
             let startTime
             let startValue = parseInt(element.innerHTML)
+            //skip animation if endvalue is just start + 1
             if (endValue - startValue <= 1) {
                 element.innerHTML = endValue
                 return

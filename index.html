@@ -13,34 +13,50 @@
             </div>
         </div>
         <div class="row">
-            <div class="column" style="background-color: bisque;">
+            <div id="acct-col" class="column">
                 <h2>Your Account:</h2>
                 <p id="followers"><span>0</span> followers</p>
                 <p id="retattles"><span>0</span> retattles</p>
                 <p id="hearts"><span>0</span> hearts</p>
                 <p id="managers"><span>0</span> managers</p>
                 <p id="dollars">$<span>0</span> Promo Dollars</p>
-                <button onClick="tattle()">Tattle!</button>
+                <button class="button large-button light" onClick="tattle()">
+                    Tattle!
+                </button>
             </div>
-            <div class="column" style="background-color: cornflowerblue;">
+            <div id="shop-col" class="column">
                 <h2>Shop</h2>
-                <button onClick="buyOneFollower()" id="buyOneFollowerButton">
+                <ul></ul>
+                <button
+                    class="button dark"
+                    onClick="buyOneFollower()"
+                    id="buyOneFollowerButton"
+                >
                     Buy 1 Follower
                 </button>
-                <button onClick="buyTenFollowers()" id="buyTenFollowersButton">
+                <button
+                    class="button dark"
+                    onClick="buyTenFollowers()"
+                    id="buyTenFollowersButton"
+                >
                     Buy 10 Followers
                 </button>
-                <button onClick="buyMaxFollowers()" id="buyMaxFollowersButton">
+                <button
+                    class="button dark"
+                    onClick="buyMaxFollowers()"
+                    id="buyMaxFollowersButton"
+                >
                     Buy Max (0) Followers
                 </button>
                 <button
+                    class="button dark"
                     onClick="buySocialMediaManager()"
                     id="buyOneManagerButton"
                 >
                     Buy 1 social media manager
                 </button>
             </div>
-            <div class="column" style="background-color: coral;">
+            <div id="comm-col" class="column">
                 <h2>Your Communities:</h2>
                 <h3>Community score:</h3>
                 <p id="news">News: ##.#</p>

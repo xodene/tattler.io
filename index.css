@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 
+:root {
+    --primary-color: #274983;
+    --light-color: #23aafd;
+    --paragraph-font: "Heebo", sans-serif;
+}
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background: var(--primary-color);
 }
 
 .column {
@@ -17,7 +24,7 @@ body {
 .column p,
 h2,
 h3 {
-    font-family: "Balsamiq Sans", cursive;
+    font-family: var(--paragraph-font);
 }
 
 .row:after {
@@ -34,7 +41,8 @@ h3 {
 }
 
 #header {
-    background: #274983;
+    background: var(--primary-color);
+    border-bottom: 1.5px solid var(--light-color);
 }
 
 #header #title {
@@ -42,4 +50,49 @@ h3 {
     font-size: 32pt;
     font-family: "Balsamiq Sans", cursive;
     color: #fff;
+}
+
+#acct-col {
+    background: #274983;
+    color: #fff;
+    border-radius: 20px;
+    border-right: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+#shop-col {
+    color: #ffffff;
+}
+
+#comm-col {
+    background: var(--light-color);
+    color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#followers span {
+    font-size: 22pt;
+}
+
+.button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 14pt;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.light {
+    background: var(--light-color);
+    border: none;
+}
+
+.dark {
+    background: var(--primary-color);
+    border: 1px solid var(--light-color);
+}
+
+.large-button {
+    font-size: 22pt;
 }

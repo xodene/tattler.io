@@ -26,16 +26,16 @@ function tattle() {
 
 function updateLabels() {
     const followers = document.querySelector("#followers span")
-    view.animate.countUp(followers, gameData.followers, 1000)
+    view.animate.countUp(followers, gameData.followers, 500)
 
     const retattles = document.querySelector("#retattles span")
-    view.animate.countUp(retattles, gameData.retattles, 1000)
+    view.animate.countUp(retattles, gameData.retattles, 500)
 
     const hearts = document.querySelector("#hearts span")
-    view.anim.countUp(hearts, gameData.hearts, 1000)
+    view.animate.countUp(hearts, gameData.hearts, 500)
 
     const dollars = document.querySelector("#dollars span")
-    view.animate.countUp(dollars, gameData.promoDollars, 1000)
+    view.animate.countUp(dollars, gameData.promoDollars, 500)
 
     document.getElementById("managers").innerHTML =
         gameData.managers + " managers"
